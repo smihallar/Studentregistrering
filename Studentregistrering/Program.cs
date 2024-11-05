@@ -1,10 +1,15 @@
-﻿namespace Studentregistrering
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
+
+namespace Studentregistrering
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            FrontDesk theFrontDesk = new FrontDesk();
+            theFrontDesk.Start();
         }
     }
 }
+
